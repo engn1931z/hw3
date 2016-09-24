@@ -15,7 +15,7 @@ Your Python code should:
 
 3. Pass these queries as an appropriately formatted string (with terminators) to a web-based virtual instrument using the requests library.
 
-Before you start this assignment, please remember to install pdfminer. **The easiest way to install pdfminer is using the pip package managemenet system: `pip install pdfminer`
+Before you start this assignment, please remember to install pdfminer. **The easiest way to install pdfminer is using the pip package management system: `pip install pdfminer`
 
 `hw3.py` is a template code for the assignment. **Please review the comments at the top of that file.**
 `pdfminerToText.py` contains a helpful convert() function for extracting text using the pdfminer library from [Tim Arnold's artcile on "Manipulating PDFs with Python"](https://www.binpress.com/tutorial/manipulating-pdfs-with-python/167). 
