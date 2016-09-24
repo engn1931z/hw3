@@ -11,7 +11,7 @@ Your Python code should:
 
 1. Use the pdfminer library to extract the text from the [PDF manual for the E3631A](http://cp.literature.agilent.com/litweb/pdf/E3631-90002.pdf). 
 
-2. Use the re library to find all unique long-form state queries (ignoring any optional command elements/nodes as descibed [here](http://www.keysight.com/upload/cmc_upload/All/FollowtheSCPILearningProcessandUsingtheTool.pdf?&cc=US&lc=eng)). 
+2. Use the re library to find all unique long-form state queries (ignoring any optional command elements/nodes as described [here](http://www.keysight.com/upload/cmc_upload/All/FollowtheSCPILearningProcessandUsingtheTool.pdf?&cc=US&lc=eng)). 
 
 3. Pass these queries as an appropriately formatted string (with terminators) to a web-based virtual instrument using the requests library.
 
