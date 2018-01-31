@@ -2,12 +2,12 @@
 #
 # This file will begin by creating a string called userGuideText using the pdfminer library.
 # This string userGuideText will be saved into a separate file userGuideText.txt to speed up your subsequent testing.
-# 
+#
 # Your assignment is to programmatically analyze the userGuideText string using regular expressions to find all the unique SCPI Query Commands.
 # Once you find all the query commands, you should pass them as a single long queryString to pass to our virtual E3631A system.
 # queryString should be a single string that has all the queries concatenated (joined) together with the appropriate terminators.
 #
-# When you have a final answer, you can submit your assignment to the autograder by running the submit.py script 
+# When you have a final answer, you can submit your assignment to the autograder by running the submit.py script
 
 ##################################################################
 ### HELPER CODE TO IMPORT PDFMINER LIBRARY AND PRODUCE TEXT STRING
@@ -16,7 +16,7 @@ import pdfminerToText
 import re
 import requests
 
-try: 
+try:
 	with open('userGuideText.txt','r') as f1: userGuideText=f1.read()
 except:
 	userGuideText=pdfminerToText.convert("E3631-90002.pdf")
@@ -46,4 +46,4 @@ print response
 ### DO NOT CHANGE THE FOLLOWING - Used in submission process
 ##################################################################
 def yourSubmission():
-	return {'email':email,'hw':3,'queryString':queryString,'response':response}
+	return {'email':email,'hw':'parsing','queryString':queryString,'response':response}

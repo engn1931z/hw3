@@ -1,16 +1,16 @@
 #Run this script at the end when you are ready to submit your homework to the autograder.
 
-import hw3  # imports your hw3 module
+import hw_parsing  # imports your hw3 module
 import requests
 
-submissionFile=open('hw3.py','r')
-postData=hw3.yourSubmission()
+submissionFile=open('hw_parsing.py','r')
+postData=hw_parsing.yourSubmission()
 
 
 with open('token','a+') as tokenFile:
 	token=tokenFile.read();
 
-if len(token)<6: 
+if len(token)<6:
 	with open('token','w') as tokenFile:
 		tokenResponse=requests.post("https://script.google.com/macros/s/AKfycbxKmFUGdc3iQtn4s_Hng1aOzpuY7JU3Cyo9upIMGk_2V9BJO1U/exec",data={'requestingToken':1,'email':postData["email"]});
 		token=tokenResponse.text;
@@ -19,6 +19,6 @@ if len(token)<6:
 postData["token"]=token
 postData["submission"]=submissionFile.read()
 subResponse=requests.post("https://script.google.com/macros/s/AKfycbxKmFUGdc3iQtn4s_Hng1aOzpuY7JU3Cyo9upIMGk_2V9BJO1U/exec",data=postData)
-responseFile=open('submissionResponse.txt','w+')
+responseFile=open('submissionResponse.txt','wb')
 responseFile.write(subResponse.text.encode('utf8'))
-print subResponse.text
+print(subResponse.text)
