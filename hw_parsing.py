@@ -20,7 +20,7 @@ try:
 	with open('userGuideText.txt','r') as f1: userGuideText=f1.read()
 except:
 	userGuideText=pdfminerToText.convert("E3631-90002.pdf")
-	with open('userGuideText.txt','wb') as f2: f2.write(userGuideText)
+	with open('userGuideText.txt','w', encoding='utf-8') as f2: f2.write(userGuideText)
 
 ##################################################################
 ### YOUR CODE TO FIND & CONCATENATE ALL SCPI QUERIES GOES HERE
@@ -41,7 +41,7 @@ with open('queryString.txt','w') as f3:
 response=requests.get('https://script.google.com/macros/s/AKfycbxKmFUGdc3iQtn4s_Hng1aOzpuY7JU3Cyo9upIMGk_2V9BJO1U/exec',params={'queryString':queryString}).text
 with open('response.txt','w') as f4:
     test=f4.write(response)
-print response
+print(response)
 ##################################################################
 ### DO NOT CHANGE THE FOLLOWING - Used in submission process
 ##################################################################
