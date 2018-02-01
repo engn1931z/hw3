@@ -9,13 +9,13 @@ In this assignment, we will follow the advice from the helpful engineers at Keys
 
 Your Python code should:
 
-1. Use the pdfminer library to extract the text from the [PDF manual for the E3631A](http://cp.literature.agilent.com/litweb/pdf/E3631-90002.pdf).
+1. Use the pdfminer library to extract the text from the [PDF manual for the E3631A](http://literature.cdn.keysight.com/litweb/pdf/E3631-90002.pdf).
 
 2. Use the re library to find all unique long-form state queries (ignoring any optional command elements/nodes as described [here](http://www.keysight.com/upload/cmc_upload/All/FollowtheSCPILearningProcessandUsingtheTool.pdf?&cc=US&lc=eng)).
 
 3. Pass these queries as an appropriately formatted string (with terminators) to a web-based virtual instrument using the requests library.
 
-Before you start this assignment, please remember to install pdfminer. **The easiest way to install PDFMiner.six using the pip package management system: `pip install pdfminer.six`
+Before you start this assignment, please remember to install pdfminer. **The easiest way to install PDFMiner.six using the pip3 package management system: `pip3 install pdfminer.six`
 
 `hw_parsing.py` is a template code for the assignment. **Please review the comments at the top of that file.**
 `pdfminerToText.py` contains a helpful convert() function for extracting text using the pdfminer library from [Tim Arnold's artcile on "Manipulating PDFs with Python"](https://www.binpress.com/tutorial/manipulating-pdfs-with-python/167). 
