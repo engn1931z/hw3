@@ -18,7 +18,7 @@ Your Python code should:
 Before you start this assignment, please remember to install pdfminer. **The easiest way to install PDFMiner.six on Pi using the pip3 package management system: `pip3 install pdfminer.six`
 
 `hw_parsing.py` is a template code for the assignment. **Please review the comments at the top of that file.**
-`pdfminerToText.py` contains a helpful convert() function for extracting text using the pdfminer library from [Tim Arnold's artcile on "Manipulating PDFs with Python"](https://www.binpress.com/tutorial/manipulating-pdfs-with-python/167). 
+`pdfminerToText.py` contains a helpful convert() function for extracting text using the pdfminer library adapted from [Tim Arnold's artcile on "Manipulating PDFs with Python"](https://www.binpress.com/tutorial/manipulating-pdfs-with-python/167). 
 `submit.py` is the script that will submit your code to the autograder.
 
 Please note you are welcome to try this assignment as many times as you would like. (There is no penalty for failed attempts, because I wanted to encourage you to practice, test, and debug.) **However, please make sure to obey the class collaboration policy --- do not share your code with others; please write and debug on your own!**
