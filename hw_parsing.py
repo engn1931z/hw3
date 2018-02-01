@@ -1,4 +1,4 @@
-# Homework 3 Template Code
+# Homework Parsing Template Code
 #
 # This file will begin by creating a string called userGuideText using the pdfminer library.
 # This string userGuideText will be saved into a separate file userGuideText.txt to speed up your subsequent testing.
