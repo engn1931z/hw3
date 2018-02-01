@@ -1,6 +1,6 @@
 #Run this script at the end when you are ready to submit your homework to the autograder.
 
-import hw_parsing  # imports your hw3 module
+import hw_parsing  # imports your hw_parsing module
 import requests
 
 submissionFile=open('hw_parsing.py','r')
