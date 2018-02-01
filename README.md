@@ -9,7 +9,7 @@ In this assignment, we will follow the advice from the helpful engineers at Keys
 
 Your Python code should:
 
-1. Use the pdfminer library to extract the text from the [PDF manual for the E3631A](http://literature.cdn.keysight.com/litweb/pdf/E3631-90002.pdf) (It may take ~15 mins to run on a Raspberry Pi.)
+1. Use the pdfminer library to extract the text from the [PDF manual for the E3631A](http://literature.cdn.keysight.com/litweb/pdf/E3631-90002.pdf). It may take ~15 mins to run on a Raspberry Pi.
 
 2. Use the re library to find all unique long-form state queries (ignoring any optional command elements/nodes as described [here](http://www.keysight.com/upload/cmc_upload/All/FollowtheSCPILearningProcessandUsingtheTool.pdf?&cc=US&lc=eng)).
 
