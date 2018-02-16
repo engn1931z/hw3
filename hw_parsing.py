@@ -17,7 +17,7 @@ import re
 import requests
 
 try:
-	with open('userGuideText.txt','r') as f1: userGuideText=f1.read()
+	with open('userGuideText.txt','r', encoding='utf-8') as f1: userGuideText=f1.read()
 except:
 	userGuideText=pdfminerToText.convert("E3631-90002.pdf")
 	with open('userGuideText.txt','w', encoding='utf-8') as f2: f2.write(userGuideText)
